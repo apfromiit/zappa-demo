@@ -12,15 +12,26 @@ $ `virtualenv venv`
 
 $ `source venv/bin/activate`
 
-$ `pip install zappa`
-
-$ `pip install flask`
+$ `pip install -r requirements.txt`
 
 ## To deploy project:
+
+$ `zappa init`
 
 $ `zappa deploy dev`
 
 $ `zappa update dev`
+
+If `zappa update dev` fails with below error,
+
+> botocore.exceptions.ParamValidationError: Parameter validation failed:<br>
+> Invalid type for parameter restApiId, value: None, type: <class 'NoneType'>, valid types: <class 'str'>
+
+Execute below commands.
+
+$ `zappa undeploy dev`
+
+$ `zappa deploy dev`
 
 ## To delete project deployment:
 
