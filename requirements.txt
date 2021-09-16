@@ -1,3 +1,4 @@
 zappa==0.52.0
 flask
+flask-cors
 troposphere==2.7.0
