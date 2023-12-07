@@ -1,2 +1,3 @@
 venv
 zappa*.json
+__pycache__

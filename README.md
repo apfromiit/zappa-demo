@@ -8,7 +8,7 @@ $ `aws configure`
 
 $ `pip install virtualenv`
 
-$ `virtualenv venv`
+$ `virtualenv -p python3.11 venv`
 
 $ `source venv/bin/activate`
 
@@ -41,4 +41,6 @@ $ `zappa undeploy dev`
 
 $ `python hello.py`
 
+## To run the app in localhost:
 
+$ `flask --app hello run`

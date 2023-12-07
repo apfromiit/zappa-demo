@@ -17,6 +17,3 @@ def get_hello_name(name):
 def post_hello_name():
     data = request.get_json()
     return {'hello': data.get('name', 'world')}
-
-if __name__ == "__main__":
-    app.run(debug=True)
